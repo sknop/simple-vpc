@@ -8,3 +8,8 @@ private-availability-zones = [ "eu-west-1a", "eu-west-1b", "eu-west-1c" ]
 
 jumphost-instance-type = "t3.micro"
 
+bootcamp-key-name = "bootcamp-cc-key"
+
+
+owner_email = "<<write your email here >>"
+owner_name = "<<write your name here >>"
