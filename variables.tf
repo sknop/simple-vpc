@@ -38,3 +38,17 @@ variable "jumphost-instance-type" {
   description = "AWS instance type used for jumphost instance"
   default = "t3.micro"
 }
+
+variable "bootcamp-key-name" {
+  default = "bootcamp-key"
+  description = "Name of key in AWS"
+  type = string
+}
+
+variable "owner_email" {
+  type = string
+}
+
+variable "owner_name" {
+  type = string
+}
