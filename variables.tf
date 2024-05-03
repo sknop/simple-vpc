@@ -39,6 +39,11 @@ variable "jumphost-instance-type" {
   default = "t3.micro"
 }
 
+variable "database-instance-type" {
+  description = "AWS instance type used for jumphost instance"
+  default = "m5d.large"
+}
+
 variable "bootcamp-key-name" {
   default = "bootcamp-key"
   description = "Name of key in AWS"

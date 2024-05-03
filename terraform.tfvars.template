@@ -7,9 +7,9 @@ public-availability-zones = [ "eu-west-1a", "eu-west-1b", "eu-west-1c" ]
 private-availability-zones = [ "eu-west-1a", "eu-west-1b", "eu-west-1c" ]
 
 jumphost-instance-type = "t3.micro"
+database-instance-type = "m5d.large"
 
-bootcamp-key-name = "bootcamp-cc-key"
+bootcamp-key-name = "simple-vpc-key"
 
-
-owner_email = "<<write your email here >>"
-owner_name = "<<write your name here >>"
+owner_email = "sven@confluent.io"
+owner_name = "Sven Erik Knop"

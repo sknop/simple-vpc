@@ -8,6 +8,10 @@ output "jumphost-ip" {
   value = aws_instance.jumphost.public_ip
 }
 
+output "database-private-ip" {
+  description = "The database IP. This is the private IP address, only accessible from the jumphost"
+  value = aws_instance.database.private_ip
+}
 
 output "vpc-id" {
   description = "The IP of the bootcamp VPC"
@@ -35,6 +39,6 @@ output "private-subnet-ids" {
 }
 
 output "availability-zones" {
-  description = "Availability zones corresponing to the subnet idsd"
+  description = "Availability zones corresponding to the subnet ids"
   value = aws_subnet.bootcamp-private-subnet.*.availability_zone
 }
