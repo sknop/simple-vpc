@@ -3,3 +3,5 @@ terraform.tfstate.backup
 .idea/
 .terraform/
 /simple-vpc.iml
+/bootcamp.pem
+.terraform.lock.hcl
