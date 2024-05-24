@@ -16,6 +16,15 @@ variable "vpc-cidr" {
   type = string
 }
 
+variable "public-availability-zones" {
+  description = "The availability zone for the public subnet"
+  type = list(string)
+}
+
+variable "private-availability-zones" {
+  description = "The availability zones for the private subnet"
+  type = list(string)
+}
 
 variable "public-subnet-cidr" {
   description = "Public subnet CIDR"
