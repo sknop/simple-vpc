@@ -1,6 +1,6 @@
 terraform.tfstate
 terraform.tfstate.backup
-.idea/
+../.idea/
 .terraform/
 /simple-vpc.iml
 /bootcamp.pem
