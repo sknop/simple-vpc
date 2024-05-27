@@ -5,6 +5,8 @@ credentials_file_path = ""
 vpc-cidr = "172.32.0.0/16"
 public-subnet-cidr = [ "172.32.16.0/20", "172.32.32.0/20", "172.32.48.0/20" ]
 private-subnets-cidr = [ "172.32.64.0/20", "172.32.80.0/20", "172.32.96.0/20" ]
+public-availability-zones = [ "europe-west2-a", "europe-west2-b", "europe-west2-c" ]
+private-availability-zones = [ "europe-west2-a", "europe-west2-b", "europe-west2-c" ]
 
 jumphost-instance-type = "n1-standard-4"
 
