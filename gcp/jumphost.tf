@@ -5,14 +5,14 @@ resource "google_compute_address" "bootcamp-instance-address" {
 
 resource "google_compute_instance" "bootcamp-instance" {
   depends_on = [tls_private_key.ssh-key]
-  name         = "simple-vpc-jumphost"
+  name         = "gcp-jumphost"
   machine_type = var.jumphost-instance-type
   zone         = var.public-availability-zones[0]
 
   boot_disk {
     initialize_params {
       type  = "pd-standard"
-      image = "ubuntu-2004-lts"
+      image = "ubuntu-os-cloud/ubuntu-2404-lts-amd64"
       size  = 50
     }
   }
