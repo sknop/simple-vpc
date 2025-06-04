@@ -1,0 +1,5 @@
+location = "North Europe"
+
+vnet-cidr = ["172.32.0.0/16"]
+public-subnet-cidr = ["172.32.16.0/20"] 
+private-subnets-cidr = ["172.32.64.0/20"]
