@@ -8,6 +8,10 @@ terraform {
       version = "1.0.2"
       source  = "anschoewe/curl"
     }
+    random = {
+      source = "hashicorp/random"
+      version = "3.7.2"
+    }
   }
 }
 
@@ -20,3 +24,6 @@ provider "azurerm" {
 provider "curl" {
 }
 
+provider "random" {
+  # Configuration options
+}
