@@ -6,10 +6,6 @@ variable "project" {
   type = string
 }
 
-variable "credentials_file_path" {
-  type = string
-}
-
 variable "vpc-cidr" {
   default = "172.32.0.0/16"
   description = "The CIDR block for your VPC"
@@ -50,13 +46,5 @@ variable "jumphost-instance-type" {
 variable "bootcamp-key-name" {
   default = "bootcamp-key"
   description = "Name of key in GCP"
-  type = string
-}
-
-variable "owner_email" {
-  type = string
-}
-
-variable "owner_name" {
   type = string
 }

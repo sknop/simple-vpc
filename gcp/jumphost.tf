@@ -11,7 +11,7 @@ resource "google_compute_instance" "bootcamp-instance" {
 
   boot_disk {
     initialize_params {
-      type  = "pd-standard"
+      type  = "pd-ssd"
       image = "ubuntu-os-cloud/ubuntu-2404-lts-amd64"
       size  = 50
     }

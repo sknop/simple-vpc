@@ -37,7 +37,7 @@ resource "google_compute_router_nat" "bootcamp-vpc_nat" {
 resource "google_compute_subnetwork" "bootcamp-private-subnet" {
   count         = length(var.private-subnets-cidr)
   name          = "simple-vpc-private-subnet-${count.index}"
-  ip_cidr_range = element(var.private-subnets-cidr, count.index)
+  ip_cidr_range = var.private-subnets-cidr[count.index]
   region        = var.region
   network       = google_compute_network.bootcamp-vpc.id
 }
@@ -47,7 +47,7 @@ resource "google_compute_subnetwork" "bootcamp-private-subnet" {
 resource "google_compute_subnetwork" "bootcamp-public-subnet" {
   count         = length(var.public-subnet-cidr)
   name          = "simple-vpc-public-subnet-${count.index}"
-  ip_cidr_range = element(var.public-subnet-cidr, count.index)
+  ip_cidr_range = var.public-subnet-cidr[count.index]
   region        = var.region
   network       = google_compute_network.bootcamp-vpc.id
 }
