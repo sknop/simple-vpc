@@ -44,7 +44,7 @@ variable "my-ip" {
 
 variable "jumphost-instance-type" {
   description = "GCP instance type used for jumphost instance"
-  default = "t3.micro"
+  default = "n4-standard-2"
 }
 
 variable "bootcamp-key-name" {
