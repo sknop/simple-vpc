@@ -8,6 +8,8 @@ Use
 
 to give yourself permission to access Azure from your local machine.
 
+Copy the terraform.tfvars.template to terraform.tfvars and adjust accordingly.
+
 Set up terraform.tfvars to your liking, then run the usual
 
         terraform init
