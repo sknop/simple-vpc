@@ -6,5 +6,10 @@ resource "random_pet" "resource-group" {
 resource "azurerm_resource_group" "rg" {
   name     = "cc-bootcamp-${random_pet.resource-group.id}"
   location = var.location
+
+  tags = {
+    cflt_managed_by = "user"
+    cflt_managed_id = "sven"
+  }
 }
 
