@@ -7,7 +7,8 @@ resource "aws_instance" "database" {
     volume_size = 50
   }
 
-  subnet_id = aws_subnet.bootcamp-private-subnet[0].id
+  subnet_id = module.vpc.private_subnets[0]
+
   vpc_security_group_ids = [aws_security_group.all-bootcamp.id]
   associate_public_ip_address = true
 

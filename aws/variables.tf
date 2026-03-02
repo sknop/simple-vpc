@@ -57,3 +57,29 @@ variable "owner_email" {
 variable "owner_name" {
   type = string
 }
+
+variable "cflt_environment" {
+  default = "prod"
+}
+
+variable "cflt_partition" {
+  default = "sales"
+}
+
+variable "cflt_managed_by" {
+  type = string
+}
+
+variable "cflt_managed_id" {
+  default = "user"
+}
+
+variable "cflt_service" {
+  description = "This is the theatre of operation, like EMEA or APAC"
+  type = string
+}
+
+variable "keep-until" {
+  type = number
+  default = 2
+}
