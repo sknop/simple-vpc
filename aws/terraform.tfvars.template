@@ -9,3 +9,6 @@ bootcamp-key-name = "simple-vpc-key"
 
 owner_email = "sven@confluent.io"
 owner_name = "Sven Erik Knop"
+
+cflt_managed_by = "sven"
+cflt_service = "EMEA"
