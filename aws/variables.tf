@@ -8,26 +8,6 @@ variable "vpc-cidr" {
   type = string
 }
 
-variable "public-availability-zones" {
-  description = "The availability zone for the public subnet"
-  type = list(string)
-}
-
-variable "private-availability-zones" {
-  description = "The availability zones for the private subnet"
-  type = list(string)
-}
-
-variable "public-subnet-cidr" {
-  description = "Public subnet CIDR"
-  type = list(string)
-}
-
-variable "private-subnets-cidr" {
-  description = "Private subnet CIDR"
-  type = list(string)
-}
-
 variable "my-ip" {
   description = "IP Address from which to get access to the public subnet in CIDR format (usually /32)"
   type = string
